@@ -50,7 +50,13 @@
       "email": "jhondoe@gmail.com",
       "rating": 4.5,
       "consultations_quantity": 30,
-      "photo": "https://clinicamg.com/wp-content/uploads/2016/01/Jose.jpg"
+      "consultations_price": 50,
+      "experience_years": 7,
+      "photo": "https://clinicamg.com/wp-content/uploads/2016/01/Jose.jpg",
+      "education": [
+        "Bachillerato en Medicina General en la UPC",
+        "Especialización en Podología en la PUCP"
+      ]
     },
     {
       "id": 2,
@@ -64,7 +70,13 @@
       "email": "jhondoe@gmail.com",
       "rating": 3.2,
       "consultations_quantity": 33,
-      "photo": "https://clinicamg.com/wp-content/uploads/2016/01/Jose.jpg"
+      "consultations_price": 75,
+      "experience_years": 8,
+      "photo": "https://clinicamg.com/wp-content/uploads/2016/01/Jose.jpg",
+      "education": [
+        "Bachillerato en Medicina General en la UPC",
+        "Especialización en Podología en la PUCP"
+      ]
     },
     {
       "id": 3,
@@ -78,7 +90,13 @@
       "email": "jhondoe@gmail.com",
       "rating": 5,
       "consultations_quantity": 50,
-      "photo": "https://clinicamg.com/wp-content/uploads/2016/01/Jose.jpg"
+      "consultations_price": 80,
+      "experience_years": 10,
+      "photo": "https://clinicamg.com/wp-content/uploads/2016/01/Jose.jpg",
+      "education": [
+        "Bachillerato en Medicina General en la UPC",
+        "Especialización en Podología en la PUCP"
+      ]
     }
 
   ]

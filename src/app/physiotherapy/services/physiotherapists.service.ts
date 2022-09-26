@@ -46,7 +46,7 @@ export class PhysiotherapistsService {
   //Get Physiotherapist by id
   getPhysiotherapistById(id: any): Observable<Physiotherapist>{
     return this.http.get<Physiotherapist>(
-      '${this.basePath}/${id}',
+      `${this.basePath}/${id}`,
       this.httpOptions)
       .pipe(
         retry(2),

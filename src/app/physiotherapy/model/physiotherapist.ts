@@ -10,5 +10,8 @@ export interface Physiotherapist {
   email: string,
   rating: number,
   consultations_quantity: number,
-  photo: string
+  consultations_price: number,
+  experience_years: number,
+  photo: string,
+  education: string[]
 }

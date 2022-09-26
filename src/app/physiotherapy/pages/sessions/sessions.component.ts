@@ -12,11 +12,13 @@ import {TreatmentsService} from "../../services/treatments.service";
 export class SessionsComponent implements OnInit {
   treatment$: Observable<Treatment> | undefined;
 
-  s_number=0;
+  s_number=1;
   s_url:string="";
+  s_value:boolean;
 
-
-  constructor(private route: ActivatedRoute, private treatmentsService: TreatmentsService ) { }
+  constructor(private route: ActivatedRoute, private treatmentsService: TreatmentsService ) {
+    this.s_value=false;
+  }
 
   ngOnInit(): void {
     this.route.params.pipe( take(1)).subscribe((params) => {
@@ -27,10 +29,18 @@ export class SessionsComponent implements OnInit {
 
   nextSession(){
     this.s_number+=1;
+    this.s_value=true;
   }
 
   prevSession(){
-    this.s_number-=1;
+    if(this.s_number>1){
+      this.s_number-=1;
+    }
+
+    if(this.s_number=1){
+      this.s_value=false;
+    }
+
   }
 
   setUrl(url: string){

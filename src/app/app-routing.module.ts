@@ -4,13 +4,15 @@ import { TreatmentsComponent } from "./physiotherapy/pages/treatments/treatments
 import { PhysiotherapistsComponent } from "./physiotherapy/pages/physiotherapists/physiotherapists.component";
 import { TreatmentsInfoComponent } from "./physiotherapy/pages/treatments-info/treatments-info.component";
 import { SessionsComponent } from "./physiotherapy/pages/sessions/sessions.component";
+import { PhysiotherapistProfileComponent } from "./physiotherapy/pages/physiotherapist-profile/physiotherapist-profile.component";
 
 
 const routes: Routes = [
   { path: 'treatments', component: TreatmentsComponent },
   { path: 'physiotherapists', component: PhysiotherapistsComponent },
   { path: 'treatments-info/:id', component: TreatmentsInfoComponent },
-  { path: 'sessions/:id', component: SessionsComponent }
+  { path: 'sessions/:id', component: SessionsComponent },
+  { path: 'physiotherapist-profile/:id', component: PhysiotherapistProfileComponent }
 ];
 
 @NgModule({

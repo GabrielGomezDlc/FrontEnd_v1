@@ -19,7 +19,7 @@
         <mat-card-subtitle class="card-content-text"><i class="fa-solid fa-star"></i>  {{physiotherapist.rating}}</mat-card-subtitle>
         <mat-card-subtitle class="card-content-text">Medical consultancies:  {{physiotherapist.consultations_quantity}}</mat-card-subtitle>
           </div>
-          <button mat-raised-button class="card-button" style="color: white">View Profile</button>
+          <button mat-raised-button class="card-button" style="color: white"  [routerLink]="['/physiotherapist-profile', physiotherapist.id]">View Profile</button>
         </div>
 
             <img  class="card-content-img" mat-card-sm-image src="{{physiotherapist.photo}}" alt="{{physiotherapist.first_name}}'s profile photo" >
